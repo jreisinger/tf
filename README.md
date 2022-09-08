@@ -6,7 +6,7 @@ terraform plan
 terraform apply -var "instance_name=YetAnotherName"
 terraform show
 terraform state list
-terraform output
+terraform output instance_public_name
 terraform destroy
 ```
 
