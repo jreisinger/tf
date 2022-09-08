@@ -15,3 +15,9 @@ variable "record_name" {
   type        = string
   default     = "cloud"
 }
+
+variable "packages" {
+  description = "Ubuntu packages to install into the server"
+  type        = list(string)
+  default     = ["nmap"]
+}

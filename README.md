@@ -17,4 +17,4 @@ TODO:
 * [x] be able to ssh into the server
 * [x] install nmap into the server
 * [x] cleanup
-* [ ] create var containing list of packages to install
+* [x] create var containing list of packages to install
