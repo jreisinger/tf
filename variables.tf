@@ -3,3 +3,9 @@ variable "instance_name" {
   type        = string
   default     = "TempCloudInstance"
 }
+
+variable "zone_name" {
+  description = "Name of the AWS Route53 zone"
+  type        = string
+  default     = "reisinge.net."
+}

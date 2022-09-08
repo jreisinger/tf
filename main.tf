@@ -36,3 +36,16 @@ resource "aws_instance" "cloud_server" {
     Name = var.instance_name
   }
 }
+
+data "aws_route53_zone" "selected" {
+  name         = var.zone_name
+  private_zone = false
+}
+
+resource "aws_route53_record" "cloud_server-record" {
+  zone_id = data.aws_route53_zone.selected.zone_id
+  name    = "cloud.${data.aws_route53_zone.selected.name}"
+  type    = "A"
+  ttl     = "60"
+  records = [aws_instance.cloud_server.public_ip]
+}

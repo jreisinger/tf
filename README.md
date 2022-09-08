@@ -13,6 +13,6 @@ terraform destroy
 TODO:
 
 * [x] create a temp cloud server
-* [ ] create a DNS RR for the server
-* [ ] install nmap into the server
+* [x] create a DNS RR for the server
 * [ ] be able to ssh into the server
+* [ ] install nmap into the server
