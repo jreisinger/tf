@@ -1,7 +1,9 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
+      source = "hashicorp/aws"
+      # ~> (pessimistic constraint operator) allows only the rightmost version
+      # component to increment
       version = "~> 4.16"
     }
   }
@@ -19,9 +21,16 @@ resource "aws_instance" "cloud_server" {
   instance_type = "t2.micro"
 
   user_data = <<-EOF
+              #!/bin/bash
               apt-get update
               apt-get isntall nmap
+              # echo "Hello, World" > index.html
+              # nohup busybox httpd -f -p 8080 &
               EOF
+
+  # So when you change user_data and run apply, Terraform will terminate the
+  # original insance and launch a new instance.
+  user_data_replace_on_change = true
 
   tags = {
     Name = var.instance_name
