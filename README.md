@@ -15,4 +15,4 @@ TODO:
 * [x] create a temp cloud server
 * [x] create a DNS RR for the server
 * [x] be able to ssh into the server
-* [ ] install nmap into the server
+* [x] install nmap into the server

@@ -28,8 +28,8 @@ resource "aws_instance" "cloud_server" {
 
   user_data = <<-EOF
               #!/bin/bash
-              apt-get update
-              apt-get isntall nmap
+              sudo apt-get update -y
+              sudo apt-get install -y nmap
               # echo "Hello, World" > index.html
               # nohup busybox httpd -f -p 8080 &
               EOF
