@@ -6,6 +6,8 @@ AWS resources created
 * application load balancer balancing traffic across an auto scaling group of Nginx web servers
 * security groups to secure network traffic between various components
 
+![image](https://user-images.githubusercontent.com/1047259/189343248-1e87f4b8-33f9-4108-8316-f8d06c8fd87d.png)
+
 ```sh
 terraform init
 
