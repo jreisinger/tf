@@ -11,7 +11,9 @@ AWS resources created
 ```sh
 terraform init
 
-terraform apply -auto-approve
+terraform apply
+curl -I $(terraform output -raw alb_dns_name)
+
 terraform destroy
 ```
 
