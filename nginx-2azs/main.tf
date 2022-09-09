@@ -108,15 +108,14 @@ resource "aws_security_group" "webserver" {
 }
 
 resource "aws_instance" "web" {
-  ami           = var.amis[var.region]
-  instance_type = var.instance_type
-  #   key_name               = var.key_name
+  ami                    = var.amis[var.region]
+  instance_type          = var.instance_type
   subnet_id              = aws_subnet.subnet1.id
   vpc_security_group_ids = [aws_security_group.webserver.id]
+  #key_name               = var.key_name
 
   associate_public_ip_address = true
 
-  #userdata
   user_data = <<EOF
 #!/bin/bash
 apt-get -y update
