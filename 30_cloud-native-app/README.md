@@ -10,3 +10,5 @@ Deploy AWS resources:
 * SGs to secure traffic between components
 
 NOTE: both FE and API will be deployed to same set of ASG instances to save costs
+
+![image](https://user-images.githubusercontent.com/1047259/189708296-57c0873c-f1de-4155-9dd0-53032fc179f1.png)
