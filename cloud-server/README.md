@@ -12,7 +12,7 @@ TODO
 terraform init
 
 terraform plan
-terraform apply -var "instance_name=YetAnotherName"
+terraform apply [-var "instance_name=YetAnotherName"]
 terraform show
 terraform state list
 terraform output instance_public_name
