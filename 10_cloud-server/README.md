@@ -1,6 +1,6 @@
 TODO
 
-* [x] create a temp Ubuntu cloud server
+* [x] create a temp Ubuntu cloud server (VM)
 * [x] create a DNS RR for the server
 * [x] be able to ssh into the server
 * [x] install nmap into the server
