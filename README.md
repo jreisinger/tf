@@ -1,1 +1,1 @@
-My **t**erra**f**orm playground.
+My Terraform playground.
