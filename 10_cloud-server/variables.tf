@@ -4,18 +4,6 @@ variable "instance_name" {
   default     = "TempCloudServer"
 }
 
-variable "zone_name" {
-  description = "Name of the Route53 zone"
-  type        = string
-  default     = "reisinge.net."
-}
-
-variable "record_name" {
-  description = "Name of the Route53 record"
-  type        = string
-  default     = "cloud"
-}
-
 variable "packages" {
   description = "Ubuntu packages to install into the server"
   type        = list(string)

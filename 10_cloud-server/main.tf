@@ -52,16 +52,3 @@ EOF
     Name = var.instance_name
   }
 }
-
-data "aws_route53_zone" "selected" {
-  name         = var.zone_name
-  private_zone = false
-}
-
-resource "aws_route53_record" "cloudserver" {
-  zone_id = data.aws_route53_zone.selected.zone_id
-  name    = "${var.record_name}.${data.aws_route53_zone.selected.name}"
-  type    = "A"
-  ttl     = "60"
-  records = [aws_instance.cloudserver.public_ip]
-}
