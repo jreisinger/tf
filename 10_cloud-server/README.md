@@ -11,7 +11,7 @@ TODO
 terraform init
 
 terraform plan
-terraform apply [-var "instance_name=YetAnotherName"]
+terraform apply [-var "region=us-east-1"]
 terraform show
 terraform state list
 terraform output instance_public_ip
