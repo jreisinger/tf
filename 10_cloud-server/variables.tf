@@ -1,3 +1,9 @@
+variable "region" {
+  description = "Region to deploy to"
+  type        = string
+  default     = "eu-central-1" # Frankfurt
+}
+
 variable "instance_name" {
   description = "Value of the Name tag for the EC2 instance"
   type        = string
