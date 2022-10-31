@@ -15,3 +15,9 @@ variable "packages" {
   type        = list(string)
   default     = ["nmap"]
 }
+
+variable "ami" {
+  description = "AMI ID to deploy"
+  type        = string
+  default     = "" # will use data from AWS
+}

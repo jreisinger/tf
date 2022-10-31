@@ -89,7 +89,8 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_instance" "cloudserver" {
-  ami           = data.aws_ami.ubuntu.id
+  ami = var.ami != "" ? var.ami : data.aws_ami.ubuntu.image_id
+
   instance_type = "t2.micro"
   key_name      = "jr-mac-pub-key"
 
