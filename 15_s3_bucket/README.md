@@ -1,0 +1,1 @@
+Create S3 bucket with lifecycle configuration.
