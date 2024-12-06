@@ -74,7 +74,7 @@ resource "aws_security_group" "allow_ssh" {
 
 resource "aws_key_pair" "pubkey" {
   key_name   = "jr-mac-pub-key"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC0ScV2K2jy1Vah+tgri4eHAn9+iTt8Rt5n5dQfb2DcCVjRyBZNj4nudwtPjE6raiVqWEmD2vn31i32+Xgq/B8bonMV8tgdJ7GSM9980+CZxJlO03b8rr7MQTYVDQ+J9Op/DQsZ1w/gCg93XEKeFQZp+UaUVydImI8IKEWpKA4OQHdGMoIdt6woWzCUvvmygMvzq+eEymbZgrxqD+Iwb9TZHfIWLPXsxVq9kn0iTQaaAusPY8hxrfv/bj0ns+ULVQ/67dmA1aeFB5yRbo3mq+vRt9dRAjHOKvqDR9JmBwtgEWiMYbdK5+GFVExiQLPnzWIyWTSahAuSdet3swBf9+sRaokz0f54sxFXRfynivlyxb34bMpUfZzrOuZMKRFDkM7udymugF1RPxEb69W5p+BA3k5KZy0Gf83VmW9k9QiM4rjM9fO6gvCfiu2xLAgdDWh8jBu6mK07nrhY5Wsj+/S2BgV+MGfmQDv9LEXXIb9NcR39nzDRRTvFao4TsWLbCgU="
+  public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBMiUjr78aDlJ3689mhuOhi4+D8aaSO+o43GhrF3QtHH"
 }
 
 data "aws_ami" "ubuntu" {
