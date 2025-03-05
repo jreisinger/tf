@@ -10,6 +10,9 @@ TODO
 # just once after creating or pulling (maintains .terraform.lock.hcl)
 terraform init
 
+export AWS_ACCESS_KEY_ID="anaccesskey"
+ export AWS_SECRET_ACCESS_KEY="asecretkey"
+
 terraform plan
 terraform apply [-var "region=us-east-1"]
 terraform show
