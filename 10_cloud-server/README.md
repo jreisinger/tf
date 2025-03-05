@@ -19,4 +19,6 @@ terraform show
 terraform state list
 terraform output instance_public_ip
 terraform destroy
+
+ssh ubuntu@<instance_public_ip>
 ```
