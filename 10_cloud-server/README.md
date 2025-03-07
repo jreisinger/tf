@@ -12,6 +12,11 @@ terraform init
 
 export AWS_ACCESS_KEY_ID="anaccesskey"
  export AWS_SECRET_ACCESS_KEY="asecretkey"
+# or if you have profile in ~/.aws/credentials like
+# [profile-name]
+# aws_access_key_id = anaccesskey
+# aws_secret_access_key = asecretkey
+export AWS_PROFILE=<profile-name>
 
 terraform plan
 terraform apply [-var "region=us-east-1"]
